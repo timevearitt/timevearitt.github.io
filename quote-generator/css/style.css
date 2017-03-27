@@ -1,0 +1,88 @@
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 960px;
+    color: #663300;
+  }
+}
+
+@import 'https://fonts.googleapis.com/css?family=Mogra';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100';
+
+body{
+  background-color: #526f35;
+  font-family: 'Raleway', sans-serif;
+  color: #663300;
+}
+
+h1 {
+  font-size: 26px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#main{
+  background-color: #fff;
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+#quote {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: 'Mogra', cursive;
+}
+
+#author {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-bottom: 15px;
+  font-size: 13px;
+  background: #663300;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  border: none;
+  text-decoration: none;
+}
+
+button:focus {
+  outline:0;
+}
+
+footer{
+  padding: 10px;
+  color: #fff;
+}
+
+#twitter{
+  background-color: #0084b4;
+}
+
+#linkedin{
+  color: #DDEBFF;
+  background-color: #00347F;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px){
+  h1 {
+    font-size: 48px;
+  }
+
+  #quote {
+    font-size: 48px;
+  }
+
+  #author {
+    font-size: 32px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+}
