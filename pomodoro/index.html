@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Free Code Camp - Pomodoro</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="scripts/scripts.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div class="container">
+				<div class="row text-center">
+					<h1>Free Code Camp</h1>
+					<h2>Pomodoro Clock</h2>
+				</div>
+				<div class="row text-center">
+					<div class="text-center"><a id="addWorkTime" class="btn" href="#"><i class="fa fa-plus fa-3x" aria-hidden="true"></i></a><div id="workTimer" class="time"></div><a id="subWorkTime" class="btn" href="#"><i class="fa fa-minus fa-3x" aria-hidden="true"></i></a></div>
+				</div>
+				<div class="row text-center">
+					<div class="text-center"><a id="addBreak" class="btn" href="#"><i class="fa fa-plus fa-3x" aria-hidden="true"></i></a><div id="breakTimer" class="time"></div><a id="subBreak" class="btn" href="#"><i class="fa fa-minus fa-3x" aria-hidden="true"></i></a></div>
+				</div>
+				<div class="row text-center">
+					<button type="button" id="start">Start</button> <button type="button" id="stop">Stop</button> <button type="button" id="reset">Reset</button>
+				</div>
+				<div class="row text-center">
+					<audio id="airhorn" src="sounds/airhorn.mp3" type="audio/mp3"></audio> 
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<footer class="text-center footer">
+	  Coded & Designed by Tim Evearitt &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script></br>
+	</footer>
+</html>
+

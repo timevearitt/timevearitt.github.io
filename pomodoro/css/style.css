@@ -1,0 +1,96 @@
+.container {
+     max-width: 960px;
+     background-color: #C0E79F;
+     border-radius: 15px;
+  }
+
+@import 'https://fonts.googleapis.com/css?family=Pacifico';
+@import 'https://fonts.googleapis.com/css?family=Orbitron';
+@import 'https://fonts.googleapis.com/css?family=Cutive+Mono';
+
+body{
+  font-family: 'Pacifico', serif;
+  font-size: 18px;
+  color: #2E6005;
+  background-color: #6CA63C;
+  padding-top: 15px;
+}
+
+@media (min-width: 768px){
+  h1{
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 768px){
+  h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+#wrap {
+  margin: -90 auto 0;
+}
+
+.footer {
+  padding-top:20px;
+}
+
+#title{
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 55px;
+}
+ 
+#workTimer{
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  font-size: 42px;
+  font-family: 'Cutive Mono', monospace;
+}
+
+#breakTimer{
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  font-size: 42px;
+  font-family: 'Cutive Mono', monospace;
+}
+
+@media (min-width: 768px){
+  #workTimer, #breakTimer {
+    font-size: 98px;
+  } 
+}
+
+.time {
+  width: 4em;
+  font-weight: bold;
+}
+
+.fa{
+  padding-bottom: 18px;
+  color: #4E871E;
+  border: none;
+}
+
+@media (min-width: 768px){
+  .fa{
+    padding-bottom: 50px;
+  }
+}
+
+button {
+  font-family: 'Orbitron', serif;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #95CB69;
+  border: none;
+  padding: 15px;
+  margin: 5px;
+  width: 5em;
+}
+
+button:focus {
+  outline: 0;
+}
