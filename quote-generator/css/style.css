@@ -38,6 +38,11 @@ h1 {
   margin-bottom: 15px;
 }
 
+.social{
+  color: #fff;
+  margin: 10px 20px 0px 20px;
+}
+
 button {
   margin-bottom: 15px;
   font-size: 13px;
@@ -56,6 +61,7 @@ button:focus {
 footer{
   padding: 10px;
   color: #fff;
+  font-size: 18px;
 }
 
 #twitter{
