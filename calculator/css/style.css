@@ -78,6 +78,15 @@ body{
   color: white;
 }
 
+.social{
+  color: #000;
+  margin: 10px 20px 0px 20px;
+}
+
 button:focus {
   outline: 0;
+}
+
+footer{
+  color: ;
 }
