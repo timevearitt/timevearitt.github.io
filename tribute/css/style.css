@@ -44,12 +44,12 @@ li:before {
     top: 3px;
 }
 
-#linkedin{
-  color: #DDEBFF;
-  background-color: #00347F;
-  margin-top: 10px;
+.social{
+  margin: 10px 20px 0px 20px;
 }
 
 footer{
+  font-size: 18px;
   padding: 10px;
+  margin-bottom: 40px;
 }
