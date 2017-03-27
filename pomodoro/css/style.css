@@ -33,10 +33,6 @@ body{
   margin: -90 auto 0;
 }
 
-.footer {
-  padding-top:20px;
-}
-
 #title{
   font-family: 'Pacifico', cursive;
   margin-bottom: 55px;
@@ -73,9 +69,14 @@ body{
   border: none;
 }
 
+.social{
+  color: #2E6005;
+  margin: 10px 20px 0px 20px;
+}
+
 @media (min-width: 768px){
   .fa{
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 }
 
