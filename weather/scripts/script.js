@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $.get("http://ipinfo.io", function(response) {
+  $.get("https://ipinfo.io", function(response) {
     ipAdd = response.ip;  //get ip address
     
     var geoApi = 'http://freegeoip.net/json/' + ipAdd;
