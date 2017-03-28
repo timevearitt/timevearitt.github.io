@@ -2,7 +2,7 @@ $(document).ready(function() {
   $.get("https://ipinfo.io", function(response) {
     ipAdd = response.ip;  //get ip address
     
-    var geoApi = 'http://freegeoip.net/json/' + ipAdd;
+    var geoApi = 'https://freegeoip.net/json/' + ipAdd;
     // Find Lat and Lon based on IP via API
     $.getJSON(geoApi, function(geo){
       lat = geo.latitude;
