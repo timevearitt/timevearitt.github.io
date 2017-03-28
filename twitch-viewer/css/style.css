@@ -52,7 +52,8 @@ li{
 
 .footer {
   position: relative;
-  margin-top: -90px; /* negative value of footer height */
+  margin-top: -150px; /* negative value of footer height */
+  margin-bottom: 100px;
   height: 90px;
   clear:both;
   padding-top:20px;
@@ -98,6 +99,11 @@ li{
 
 .online{
   background: #90EE90;
+}
+
+.social{
+  color: #fff;
+  margin: 10px 20px 0px 20px;
 }
 
 button:focus {
