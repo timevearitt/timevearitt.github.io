@@ -1,0 +1,115 @@
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 960px;
+    min-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+body{
+  background-color: #afb2b7;
+  color: #262526;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+html{
+  height: 100%
+}
+
+input[type=text] {
+    width: 230px;
+    border-radius: 12px;
+    border: 3px solid #000;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #000;
+    padding: 5px;
+}
+
+input::-webkit-input-placeholder {
+  color: red !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+  color: red !important; 
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+  color: red !important;
+
+}
+ 
+input:-ms-input-placeholder {  
+  color: red !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li{
+  background-color:	#f3f3f3;
+  border-radius: 12px;
+  margin-top: 15px;
+  padding: 1px 10px 1px 10px;
+}
+
+/* unvisited link */
+a:link {
+    color: #262526;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #262526;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #262526;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #262526;
+    text-decoration: none;
+}
+
+h1{
+  font-size: 48px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.social{
+  color: #7f8084;
+  margin: 10px 20px 0px 20px;
+}
+
+#linkedin{
+  color: #DDEBFF;
+  background-color: #00347F;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  margin-bottom: 100px;
+  height: 90px;
+  clear:both;
+  padding-top:20px;
+} 
+
+#wrap {
+  min-height: 100%;
+}
