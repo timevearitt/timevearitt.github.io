@@ -9,7 +9,7 @@ $(document).ready(function() {
       lon = geo.longitude;
       
     //Call Open Weather with lat and lon info  
-    var api='https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&APPID=e9f08d947860b6c732d46cd2f4b23cbc';
+    var api='http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&APPID=e9f08d947860b6c732d46cd2f4b23cbc';
     $.getJSON(api, function(data){
       temp = Math.round(data.main.temp);
       local = data.name;
