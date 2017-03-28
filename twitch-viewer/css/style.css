@@ -1,0 +1,129 @@
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 960px;
+    min-height: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+body{
+  background-color: #808080;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+html{
+  height: 100%
+}
+
+input[type=text] {
+    width: 230px;
+    border-radius: 12px;
+    border: 3px solid #000;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+h1{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 48px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li{
+  background-color: #f3f3f3; 
+  border-radius: 12px;
+  margin-top: 15px;
+  overflow: hidden;
+  font-size: 12px; 
+}
+
+#linkedin{
+  color: #DDEBFF;
+  background-color: #00347F;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  position: relative;
+  margin-top: -90px; /* negative value of footer height */
+  height: 90px;
+  clear:both;
+  padding-top:20px;
+} 
+
+#wrap {
+  min-height: 100%;
+}
+
+.logo{
+  height: 25px;
+  border-radius: 50%;
+  margin: 0px 25px 0px 5px;
+  float: left;
+}
+
+@media (min-width: 768px){
+  .logo{
+    height: 75px;
+    margin: 0px 25px 0px 25px;
+  }
+
+  li{
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;  
+  }
+}
+
+.warning{
+  color: red;
+  font-size: 18px;
+  padding-left: 25px;
+  background: #FF91A4;
+}
+
+.bio{
+  font-size: 12px;
+}
+
+.offline{
+  background: #FFFF73;
+}
+
+.online{
+  background: #90EE90;
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* unvisited link */
+a:link {
+    color: #262526;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #262526;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #262526;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #262526;
+    text-decoration: none;
+}
