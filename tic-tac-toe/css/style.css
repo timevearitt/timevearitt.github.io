@@ -1,0 +1,166 @@
+html{
+  height: 100%
+}
+
+body{
+	background-color: #000;
+	color: #a8a8a8;
+  height: 100%;
+}
+
+h1{
+  font-size: 48px;
+}
+
+@media (min-width: 768px){
+  h1{
+    font-size: 72px;
+  } 
+}
+
+.container {
+     max-width: 960px;
+     margin-top: 25px;
+     border-radius: 15px;
+  }
+
+#wrap {
+  margin: -90 auto 0;
+}
+
+#board{
+	padding: 25px;
+}
+
+th{
+	border: none !important;
+}
+
+.table {
+    border-radius: 5px;
+    margin: 0 auto;
+    float: none;
+    font-size: 36px;
+}
+
+@media (min-width: 768px){
+  .table{
+    font-size: 48px;
+  }  
+}
+
+.v{
+    border-left:5px solid #d3d3d3;
+    border-right:5px solid #d3d3d3;
+}
+
+.h{
+    border-top: 5px solid #d3d3d3 !important;
+    border-bottom:5px solid #d3d3d3; 
+}
+
+.top{
+	border-top: none !important;
+}
+
+.square{
+  height: 75px;
+  width: 75px;
+}
+
+@media (min-width: 768px){
+  .square{
+    height: 100px;
+    width: 100px;
+  }  
+}
+
+#score{
+  font-size: 18px;
+}
+
+.scoreBox{
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+
+#winner{
+  font-size: 28px;
+}
+
+@media (min-width: 768px){
+  #winner{
+    font-size: 38px;
+  }  
+}
+
+.token{
+  width: 75px;
+  border-radius: 50%;
+}
+
+#rematch{
+  border-radius: 15px;
+}
+
+button{
+  font-size: 28px;
+  margin: 25px;
+  padding: 0 15px 0 15px;
+  color: black;
+  background-color: #a8a8a8;
+}
+
+@media (min-width: 768px){
+  button{
+    font-size: 48px;
+    margin: 25px;
+    padding: 0 15px 0 15px;
+    color: black;
+    background-color: #a8a8a8;
+  }
+}
+
+button:focus{
+  outline:0;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:125px; /* this needs to be bigger than footer height*/
+}
+
+@media (min-width: 768px){
+  #main {
+    overflow:auto;
+    padding-bottom:220px; /* this needs to be bigger than footer height*/
+  }
+}
+
+.social{
+  color: #7f8084;
+  margin: 10px 20px 0px 20px;
+}
+
+.footer {
+  position: relative;
+  margin-top: -125px; /* negative value of footer height */
+  height: 125px;
+  clear:both;
+  padding-top:20px;
+} 
+
+@media (min-width: 768px){
+  .footer {
+    position: relative;
+    margin-top: -220px; /* negative value of footer height */
+    height: 220px;
+    clear:both;
+    padding-top:20px;
+  } 
+}
+

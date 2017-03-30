@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Free Code Camp - Tic Tac Toe</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="scripts/script.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div id="main" class="container">
+				<div class="row text-center"><h1>Tic Tac Toe</h1></div>
+				<div id="score" class="row text-center">
+					<div class="col-xs-1"></div>
+					<div id="playerScore" class="scoreBox col-xs-4"> 
+						PLAYER</br>
+						0 
+					</div>
+					<div class="col-xs-2"></div>
+					<div id="aiScore" class="scoreBox col-xs-4"> 
+						CPU</br>
+						0 
+					</div>
+					<div class="col-xs-1"></div>
+				</div>
+				<div class="row text-center" id="board">
+				    <table class="table .table-responsive">
+				      <tr id="row1">
+				        <td id="00" value="4" class="square top"></td>
+				        <td id="01" value="9" class="square v top"></td>
+				        <td id="02" value="2" class="square top"></td>
+				      </tr>
+				      <tr id="row2">
+				        <td id="10" value="3" class="square h"></td>
+				        <td id="11" value="5" class="square v h"></td>
+				        <td id="12" value="7" class="square h"></td>
+				      </tr>
+				      <tr id="row3">
+				        <td id="20" value="8" class="square"></td>
+				        <td id="21" value="1" class="square v"></td>
+				        <td id="22" value="6" class="square"></td>
+				      </tr>
+				    </table>
+				</div>
+				<div id="winner" class="row text-center">
+					Select Your Token!
+				</div>
+				<div id="selectToken" class="row text-center">
+					<button type="button" id="X" class="token">X</button> <button type="button" id="O" class="token">O</button>
+				</div>
+				
+				<div id="info" class="row text-center">
+					<button type='button' id='rematch'>Rematch?</button>
+				</div>
+
+			</div>
+		</div>
+	</body>
+
+	<footer class="text-center footer">
+		<div class="visible-xs text-center">
+          <a href="https://www.linkedin.com/in/timevearitt" target="_blank">
+            <i class="fa fa-linkedin fa-2x social"></i></a>
+          <a href="https://twitter.com/timevearitt" target="_blank">
+            <i class="fa fa-twitter fa-2x social" aria-hidden="true"></i></a>
+          <a href="https://github.com/timevearitt" target="_blank"><i class="fa fa-github fa-2x social" aria-hidden="true"></i></a>
+        </div>
+		<div class="hidden-xs col-sm-12 text-center">
+          <a href="https://www.linkedin.com/in/timevearitt" target="_blank">
+            <i class="fa fa-linkedin fa-3x social"></i></a>
+          <a href="https://twitter.com/timevearitt" target="_blank">
+            <i class="fa fa-twitter fa-3x social" aria-hidden="true"></i></a>
+          <a href="https://github.com/timevearitt" target="_blank"><i class="fa fa-github fa-3x social" aria-hidden="true"></i></a>
+        </div>
+	  Coded & Designed by Tim Evearitt &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script></br>
+	</footer>
+
+</html>
+
