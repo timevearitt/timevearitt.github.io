@@ -123,6 +123,7 @@ $(document).ready(function() {
 		aiBlockValue = aiBlock();
 		aiForkValue = aiFork(ai.token);
 		aiBlockForkValue = aiFork(player.token);
+		aiOppCorner = aiPlayOppCorner();
 		aiCorner = aiPlayCorner();
 
 		if(aiWinValue !== null){
@@ -145,6 +146,9 @@ $(document).ready(function() {
 			// Own the center tile
 			board[1][1] = ai.token;
 			aiTurnOver()
+		}else if(aiOppCorner !== null){
+			board[aiOppCorner.substring(0,1)][aiOppCorner.substring(1,2)] = ai.token;
+			aiTurnOver();
 		}else if(aiCorner !== null){
 			// play an open corner
 			board[aiCorner.substring(0,1)][aiCorner.substring(1,2)] = ai.token;
@@ -191,6 +195,24 @@ $(document).ready(function() {
 				}
 			}
 		}
+		return null;
+	}
+
+	// AI play opposite corner
+	function aiPlayOppCorner(){
+		if(board[0][0] === player.token && board[2][2] === ""){
+			return "22";
+		}
+		if(board[0][2] === player.token && board[2][0] === ""){
+			return "20";
+		}
+		if(board[2][0] === player.token && board[0][2] === ""){
+			return "02";
+		}
+		if(board[2][2] === player.token && board[0][0] === ""){
+			return "00";
+		}
+
 		return null;
 	}
 
