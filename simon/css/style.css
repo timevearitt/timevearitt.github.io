@@ -1,0 +1,172 @@
+body{
+	background-image: url("../images/wood_pattern_@2X.png");
+	font-family: 'Alfa Slab One', cursive;
+}
+
+.container-fluid{
+     max-width: 960px;
+  }
+
+#simon{
+	border-radius: 50%;
+	background-color: #404040;
+	width: 480px;
+	height: 480px;
+	padding: 33px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#namePlate{
+	border-radius: 50%;
+	border: 3px solid #404040;
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	margin: -120px 0px 0px -120px;
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+#nameText{
+	margin-top: 25px;
+	color: #000;
+	font-size: 40px;
+}
+
+#start{
+	width: 50px;
+	font-size: 12px;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+#btnStart{
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	background-color: red;
+	top: 50%;
+	left: 50%;
+	margin: -13px 0px 0px -13px;
+	position: absolute;
+}
+
+#strict{
+	width: 100px;
+	float: right;
+	font-size: 12px;
+	margin-top: -17px;
+	margin-right: 10px;
+}
+
+#btnStrict{
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	background-color: yellow;
+	top: 50%;
+	left: 75%;
+	margin: -13px 0px 0px -13px;
+	position: absolute;
+}
+
+#strictLight{
+	background-color: #560000;
+	border-radius: 50%;
+	border: 2px solid black;
+	width: 10px;
+	height: 10px;
+	top: 60%;
+	left: 75%;
+	margin: -5px 0px 0px -5px;
+	position: absolute;
+}
+
+#round{
+	border-radius: 10px;
+	background-color: #560000;
+	color: red;
+	font-size: 28px;
+	width: 50px;
+	height: 40px;
+	top: 50%;
+	left: 25%;
+	margin: -20px 0px 0px -25px;
+	position: absolute;
+}
+
+#power{
+	top: 25%;
+	position: relative;
+	color: black;
+}
+	
+#green{
+	position: absolute;
+  	background-color: #00FF00;
+  	opacity: .3;
+  	width: 220px;
+  	height: 220px;
+  	margin: -20px 0 0 -20px;
+	border-top-left-radius: 100%;
+  	overflow: hidden;
+}
+
+#red{
+	position: absolute;
+  	background-color: red;
+  	opacity: .3;
+  	left: 240px;
+  	width: 220px;
+  	height: 220px;
+  	margin: -20px 0 0 5px;
+	border-top-right-radius: 100%;
+  	overflow: hidden;
+}
+
+#yellow{
+	position: absolute;
+  	background-color: yellow;
+  	opacity: .3;
+  	width: 220px;
+  	height: 220px;
+  	top: 240px;
+  	margin: 5px 0 0 -20px;
+	border-bottom-left-radius: 100%;
+  	overflow: hidden;
+}
+
+#blue{
+	position: absolute;
+  	background-color: blue;
+  	opacity: .3;
+  	width: 220px;
+  	height: 220px;
+  	top: 240px;
+  	left: 240px;
+  	margin: 5px 0 0 5px;
+	border-bottom-right-radius: 100%;
+  	overflow: hidden;
+}
+
+.social{
+  color: #000;
+  margin: 10px 20px 0px 20px;
+}
+
+button:focus{
+  outline:0;
+}
