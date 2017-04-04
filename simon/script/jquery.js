@@ -86,7 +86,7 @@ $(document).ready(function() {
 	});
 	
 	// Game State toggle on/off
-	$("#power").click(function(event){
+	$("#powerBtn").click(function(event){
 		if(state === "off"){
 			state = "on";
 			displayRound();

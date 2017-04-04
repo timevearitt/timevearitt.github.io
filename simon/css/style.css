@@ -112,6 +112,7 @@ body{
 	top: 25%;
 	position: relative;
 	color: black;
+	overflow: hidden;
 }
 	
 #green{
