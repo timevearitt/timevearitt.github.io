@@ -22,6 +22,10 @@ $(document).ready(function() {
 			simonState();
 		}
 
+		if(state === "replay"){
+			replaySeq();
+		}
+
 		if(state === "off"){
 			round = 0;
 		}
@@ -115,7 +119,14 @@ $(document).ready(function() {
 			state = "gameOver";
 		}
 	}
+
 	// DISPLAY BOARD *********************************************************
+	// Replay Seq if user enter incorrect seq and not strict mode
+	function replaySeq(){
+			setTimeout(displaySeq, 1000);
+			state = "player";
+	}
+
 	// updates the value in the round/count UI box
 	function displayRound(){
 		if(round < 10){
@@ -228,6 +239,9 @@ $(document).ready(function() {
 				displayError();
 				if(strict){
 					setTimeout(initializeGame, 1750);
+					break;
+				}else{
+					state = "replay";
 					break;
 				}
 			}
