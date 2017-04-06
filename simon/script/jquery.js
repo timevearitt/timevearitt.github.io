@@ -34,34 +34,34 @@ $(document).ready(function() {
 	// PLAYER LOGIC AND CLICK EVENT*******************************************
 	// run player logic for each quad color clicked
 	$("#green").click(function(event){
-		if(state == "player"){
+		if(state === "player"){
 			playerSeq.push("green");
-			lightOn("green", "fast");
 			checkPlayerInput();
+			lightOn("green", "fast");
 		}	
 	});
 
 	$("#red").click(function(event){
-		if(state == "player"){
+		if(state === "player"){
 			playerSeq.push("red");
-			lightOn("red", "fast");
 			checkPlayerInput();
+			lightOn("red", "fast");
 		}
 	});
 
 	$("#yellow").click(function(event){
-		if(state == "player"){
+		if(state === "player"){
 			playerSeq.push("yellow");
-			lightOn("yellow", "fast");
 			checkPlayerInput();
+			lightOn("yellow", "fast");
 		}
 	});
 
 	$("#blue").click(function(event){
-		if(state == "player"){
+		if(state === "player"){
 			playerSeq.push("blue");
-			lightOn("blue", "fast");
 			checkPlayerInput();
+			lightOn("blue", "fast");
 		}
 	});
 
@@ -113,7 +113,7 @@ $(document).ready(function() {
 			displayRound();
 			checkDifficulty();
 			setTimeout(displaySeq, 1000);
-			state = "player";
+			state = "display";
 		}else{
 			win();
 			state = "gameOver";
@@ -123,8 +123,8 @@ $(document).ready(function() {
 	// DISPLAY BOARD *********************************************************
 	// Replay Seq if user enter incorrect seq and not strict mode
 	function replaySeq(){
+			state = "display";
 			setTimeout(displaySeq, 1000);
-			state = "player";
 	}
 
 	// updates the value in the round/count UI box
@@ -159,6 +159,7 @@ $(document).ready(function() {
 			lightOn(simonSeq[index], lightSpeed);
 			index++;
 			if(index >= round){
+				state = "player";
 				clearInterval(lightInterval);
 			}
 		}, difficulty);	
@@ -170,7 +171,6 @@ $(document).ready(function() {
 			lightDiv = "#" + color;
 			playSound(color);
 			$(lightDiv).animate({opacity: '1'}, speed);
-			greenSound.play();
 			$(lightDiv).animate({opacity: '.3'}, "fast");	
 		}	
 	}
@@ -235,7 +235,7 @@ $(document).ready(function() {
 	// strict mode.
 	function checkPlayerInput(){
 		for(var i=0; i<playerSeq.length; i++){
-			if(playerSeq[i] != simonSeq[i]){
+			if(playerSeq[i] !== simonSeq[i]){
 				displayError();
 				if(strict){
 					setTimeout(initializeGame, 1750);
