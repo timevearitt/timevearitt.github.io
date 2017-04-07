@@ -221,7 +221,7 @@ $(document).ready(function() {
 
 	// UI display if user reaches round 20
 	function win(){
-		lightDiv = "#" + simonSeq[5];
+		lightDiv = "#" + simonSeq[19];
 		for(i=0; i<7; i++){
 			$(lightDiv).animate({opacity: '1'}, "fast");
 			$(lightDiv).animate({opacity: '.3'}, "fast");
