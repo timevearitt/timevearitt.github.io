@@ -413,7 +413,7 @@ $(document).ready(function() {
 				return b[cri][0];
 			}
 		}
-		return null
+		return null;
 	}
 
 	// Columns win condition
